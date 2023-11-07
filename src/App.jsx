@@ -2,7 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import Card from './components/Card'
 // import viteLogo from '/vite.svg'
-// import './App.css'
+import './App.css'
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -41,26 +41,29 @@
 
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Layout from "./pages/Layout";
-import Home from "./pages/Home/Homescreen";
-import Introduction from "./pages/Intro/Introduction";
-// import Contact from "./pages/Contact";
-// import NoPage from "./pages/NoPage";
+import Temperatures from "./pages/Possibilities/Possibilities.jsx";
+import Introduction from "./pages/Introduction/Introduction.jsx";
+import Motivation from "./pages/Motivation/Motivation.jsx";
+import { Home } from '@mui/icons-material';
+import HomeScreen from "./pages/HomeScreen/HomeScreen.jsx";
+
 
 export default function App() {
   return (
+    <>
     <BrowserRouter>
       <Routes>
         <Route path="/">
-          <Route index element={<Home />} />
-          <Route path="intro" element={<Introduction />} />
-          {/* <Route path="contact" element={<Contact />} /> */}
-          {/* <Route path="*" element={<NoPage />} /> */}
+          <Route index element={<Introduction/>} />
+          <Route path="temp" element={<Temperatures/>} />
+          <Route path="motiv" element={<Motivation />} />
+          <Route path="Home" element={<HomeScreen/>} />
         </Route>
       </Routes>
     </BrowserRouter>
+    </>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(<App />)

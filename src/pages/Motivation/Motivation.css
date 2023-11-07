@@ -1,0 +1,18 @@
+.bold {
+    text-align: justify; 
+    font-family: Helvetica;   
+    font-size: 35px;
+    background-color: rgb(255, 102, 0); }
+    
+.centre {   
+    max-width: 700px;  
+    text-align: center; }
+    
+.button {
+     font-size: 18px; 
+     padding: 10px 20px;  
+     margin-top: 20px;    
+     cursor: pointer;   
+     background-color: rgba(8, 200, 248, 0.751);    
+     border: solid;
+     color: rgba(126, 254, 7, 0.899); }
