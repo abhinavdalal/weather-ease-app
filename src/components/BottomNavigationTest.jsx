@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
@@ -11,27 +11,28 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-   
-      <Box sx={{ width: 500 }}>
-        <BottomNavigation
-          showLabels
-          value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
-        >
-          <NavLink to="/Home" style={{ textDecoration: 'none' }}>
-            <BottomNavigationAction label="Homescreen" icon={<CottageIcon />} />
-          </NavLink>
-          <NavLink to="/temp" style={{ textDecoration: 'none' }}>
-            <BottomNavigationAction label="Updates" icon={<UpdateIcon />} />
-          </NavLink>
-          <NavLink to="/motiv" style={{ textDecoration: 'none' }}>
-            <BottomNavigationAction label="Suggestions" icon={<FormatQuoteIcon />} />
-          </NavLink>
-        </BottomNavigation>
-      </Box>
-
-      
+    <Box sx={{ width: '100%', paddingBottom: 'env(safe-area-inset-bottom)' }}>
+      <BottomNavigation
+        showLabels
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+        sx={{
+          backgroundColor: '#3f8cdd', // Adjust background color
+          borderTop: '1px solid #ccc', // Add a top border for separation
+        }}
+      >
+        <NavLink to="/Home" style={{ textDecoration: 'none' }}>
+          <BottomNavigationAction label="Homescreen" showLabel icon={<CottageIcon />} sx={{ fontSize: '14px', color: '#111' }} />
+        </NavLink>
+        <NavLink to="/temp" style={{ textDecoration: 'none' }}>
+          <BottomNavigationAction label="Updates" showLabel icon={<UpdateIcon />} sx={{ fontSize: '14px', color: '#111' }} />
+        </NavLink>
+        <NavLink to="/motiv" style={{ textDecoration: 'none' }}>
+          <BottomNavigationAction label="Suggestions" showLabel icon={<FormatQuoteIcon />} sx={{ fontSize: '14px', color: '#111' }} />
+        </NavLink>
+      </BottomNavigation>
+    </Box>
   );
 }
