@@ -6,6 +6,8 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import CottageIcon from '@mui/icons-material/Cottage';
 import UpdateIcon from '@mui/icons-material/Update';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import SosIcon from '@mui/icons-material/Sos';
+import SoupKitchenIcon from '@mui/icons-material/SoupKitchen';
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
@@ -19,8 +21,8 @@ export default function SimpleBottomNavigation() {
           setValue(newValue);
         }}
         sx={{
-          backgroundColor: '#3f8cdd', // Adjust background color
-          borderTop: '1px solid #ccc', // Add a top border for separation
+          backgroundColor: '#3f8cdd', 
+          borderTop: '1px solid #ccc', 
         }}
       >
         <NavLink to="/Home" style={{ textDecoration: 'none' }}>
@@ -31,6 +33,12 @@ export default function SimpleBottomNavigation() {
         </NavLink>
         <NavLink to="/motiv" style={{ textDecoration: 'none' }}>
           <BottomNavigationAction label="Suggestions" showLabel icon={<FormatQuoteIcon />} sx={{ fontSize: '14px', color: '#111' }} />
+        </NavLink>
+        <NavLink to="/Help" style={{ textDecoration: 'none' }}>
+          <BottomNavigationAction label="Help" showLabel icon={<SosIcon/>} sx={{ fontSize: '14px', color: '#111' }} />
+        </NavLink>
+        <NavLink to="/Rec" style={{ textDecoration: 'none' }}>
+          <BottomNavigationAction label="Recipe" showLabel icon={<SoupKitchenIcon/>} sx={{ fontSize: '14px', color: '#111' }} />
         </NavLink>
       </BottomNavigation>
     </Box>

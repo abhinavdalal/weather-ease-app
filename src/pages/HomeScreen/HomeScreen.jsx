@@ -29,6 +29,7 @@ const HomeScreen = () => {
       <div className="temperature">
         The Temperature is {data}°C
       </div>
+      <div>Air Quality Index</div>
       <SimpleBottomNavigation />
     </div>
   );

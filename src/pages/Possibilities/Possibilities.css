@@ -6,7 +6,6 @@
   flex-direction: column;
   align-items: center;
   height: 100vh; 
-  margin: 0; 
   width: 100%;
 }
 
@@ -35,4 +34,7 @@
   color: #3f8cdd; 
 }
 
-
+body {
+  margin: 0 auto;
+  width: 100%;
+}

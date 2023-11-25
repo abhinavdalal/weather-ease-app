@@ -4,47 +4,53 @@ import BottomNavigation from "../../components/BottomNavigationTest";
 import ResponsiveAppBar from "../../components/OpenBar";
 import Card from '@mui/material/Card';
 
+// Add image URLs corresponding to each quote
+const images = [
+  "src/assets/namaste.png",
+  "src/assets/rain.jpeg",
+  "src/assets/air quality.jpg",
+  "src/assets/indoor activities.jpg",
+  "src/assets/pets.jpg",
+  "src/assets/picnic.jpg",
+  "src/asset/sea.jpg",
+  "src/asset/rainbag.jpg",
+  "src/asset/charger.jpg",
+  "src/asset/road.jpg",
+  "src/asset/kit.jpg",
+  "src/assets/sky.jpg",
+  "src/asset/drive.jpg",
+  "src/asset/snow.jpeg",
+  "src/asset/run.jpg",
+  "src/asset/water.jpg",
+  "src/asset/drink.jpeg",
+  "src/asset/hat.jpg",
+  "src/asset/storm.jpg",
+  "src/asset/cold.jpg",
+   // ... add more image URLs
+];
+
 const quotes = [
-  "If it's raining outside, remember to carry an umbrella.",
-  "Don't forget your sunscreen on a sunny day!",
-  "Layer up with a jacket when it's cold and windy.",
-  "Wear breathable/loose clothing on a hot and humid day.",
-  "Check for severe weather alerts before heading out.",
-  "Stay hydrated on hot days, drink plenty of water.",
-  "Consider wearing a hat to protect yourself from the sun.",
-  "Bring a reusable water bottle to stay refreshed.",
-  "Wear comfortable shoes for long walks on clear days.",
-  "Pack a light jacket for cooler evenings.",
-  "Keep an extra pair of sunglasses in your bag.",
-  "Use a moisturizer in dry and windy weather.",
-  "Opt for closed shoes on rainy or snowy days.",
-  "Drive carefully during foggy conditions.",
-  "Charge your devices in case of power outages during storms.",
-  "Secure loose items in your yard during windy days.",
-  "Plan outdoor activities on days with clear skies.",
-  "Keep an emergency kit in your car for unexpected weather events.",
-  "Check road conditions before embarking on a road trip.",
-  "Avoid strenuous activities during extreme heat.",
-  "Bring a portable charger for your phone in case of power outages.",
-  "Consider a rain cover for your backpack on rainy days.",
-  "Keep an eye on tide levels if you're near the coast.",
-  "Pack a picnic on pleasant days and enjoy the outdoors.",
-  "Ensure your pets have shelter during inclement weather.",
-  "Plan indoor activities for days with heavy rain or storms.",
-  "Check the air quality before engaging in outdoor exercises.",
-  "In case of a disaster, HELPLINE NUMBER: 1916",
-  "24×7 Free HELPLINE NUMBER: 108",
-  "For Ambulance, HELPLINE NUMBER: 102",
-  "For Child HELPLINE NUMBER: 1098",
-  "Traffic HELPLINE NUMBER: 1073",
-  "In case of an accident, HELPLINE NUMBER: 108",
-  "In case of emergency, HELPLINE NUMBER: 112",
-  "In case of fire, HELPLINE NUMBER: 101",
-  "If it is sunny outside, drink water",
-  "If it's going to rain, don't forget to carry an umbrella",
-  "If the sky is clear, go take a walk outside",
-  "If it's too sunny, use sunscreen.",
-  "If it's cold, wear warm clothes",
+  "नमस्ते",
+  "If it's raining outside, remember to carry an umbrella or a raincoat.",
+  "Check the air quality before engaging in outdoor exercises",
+  "Plan indoor activities for days with heavy rain or storm",
+  "Ensure your pets have shelter during inclement weather",
+  "Pack a picnic on pleasant day and enjoy the outdoors",
+  "Keep an eye on tide levels if you're near the coast",
+  "Consider a rain cover for your backpack on rainy day",
+  "Carry a portable charger for your phone in case of power outages",
+  "Check road conditions before embarking on a road trip",
+  "Keep an emergency kit in your car for unexpected weather events",
+  "Plan outdoor activities on days with clear skies",
+  "Drive carefully during foggy conditions",
+  "Pick a light jacket for the cooler evenings",
+  "Wear comfortable shoes for long walks on clear days",
+  "carry a reusable water bottle to stay refreshed",
+  "Stay hydrated on hot days drink plenty of water",
+  "Consider wearing a hat to protect yourself from the sun",
+  "Check for severe weather alerts before heading out",
+  "Layer up with a jacket when it's cold and windy",
+  // ... add more quotes
 ];
 
 function Motivation() {
@@ -60,6 +66,12 @@ function Motivation() {
       <div className="centre">
        <div className='space'/> 
        <Card className="quote-card">
+          {/* Use an img tag to display the image */}
+          <img
+            className="quote-image"
+            src={images[quoteIndex]}
+            alt={`Image for quote ${quoteIndex + 1}`}
+          />
           <p className="quote">
             {quotes[quoteIndex]}
           </p>
