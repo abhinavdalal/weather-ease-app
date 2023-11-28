@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "abhinavdalal.github.io/weather-ease-app",
+  "homepage": "https://abhinavdalal.github.io/weather-ease-app",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
