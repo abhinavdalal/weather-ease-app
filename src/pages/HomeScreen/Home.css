@@ -1,14 +1,14 @@
 .weather-container {
   text-align: center;
   margin: 0;
-  padding: 20px;
+  padding: 15px;
   background-color: #3f8cdd; 
   color: #fff; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   font-family: "Arial", sans-serif;
-  height: 100vh;
-  width: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,8 +30,8 @@
 
 .temperature {
   font-size: 25px;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 12px;
+  margin-bottom: 15px;
 }
 
 body {

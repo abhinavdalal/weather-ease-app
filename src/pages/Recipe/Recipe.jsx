@@ -1,9 +1,12 @@
 import React from 'react';
 import './Recipe.css';
+import SimpleBottomNavigation from "../../components/BottomNavigationTest";
+import ResponsiveAppBar from "../../components/OpenBar";
 
 const Recipe = () => {
   return (
     <div className="recipe-container">
+     <ResponsiveAppBar /> 
       <h1 className="recipe-name">Besan Moisturizing Face Pack</h1>
       <p className="recipe-ingredients">
         <strong>Ingredients:</strong><br />
@@ -35,6 +38,7 @@ const Recipe = () => {
         <strong>Instructions:</strong><br />
         Mix equal parts coconut oil and sesame oil, and then add an equal amount of aloe vera gel. Optionally, add a few drops of essential oil for fragrance. Stir thoroughly to ensure an even distribution. Store the mixture in a dark glass container. Apply to your skin before sun exposure and reapply as needed, especially after swimming or sweating. Note that this homemade sunscreen may not provide the same level of protection as commercially available sunscreens, and a patch test is advisable, especially for sensitive skin.
       </p>
+      <SimpleBottomNavigation />
     </div>
   );
 }

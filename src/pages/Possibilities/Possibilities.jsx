@@ -1,7 +1,11 @@
-import { useEffect, useState } from "react";
-import "./Possibilities.css"; 
-import SimpleBottomNavigation from "../../components/BottomNavigationTest";
-import ResponsiveAppBar from "../../components/OpenBar";
+import React, { useEffect, useState } from 'react';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Box from '@mui/material/Box';
+import SimpleBottomNavigation from '../../components/BottomNavigationTest';
+import ResponsiveAppBar from '../../components/OpenBar';
 
 function Possibilities() {
   const [data, setData] = useState([]);
@@ -12,7 +16,7 @@ function Possibilities() {
 
   const getData = async () => {
     const res = await fetch(
-      "https://api.open-meteo.com/v1/forecast?latitude=19.07&longitude=72.87&hourly=temperature_2m"
+      'https://api.open-meteo.com/v1/forecast?latitude=19.07&longitude=72.87&hourly=temperature_2m'
     );
     const dataFromApi = await res.json();
     setData(dataFromApi.hourly.temperature_2m);
@@ -21,17 +25,23 @@ function Possibilities() {
   return (
     <>
       <ResponsiveAppBar />
-      <div className="container">
-        {data.slice(0, 5).map((x, i) => ( // Only the next 5 hours
-          <div key={i} className="weather-block">
-            <div className="temperature-container">
-              <h2>Next {i + 1} Hour Temp:   </h2>
-              <div className="temperature-data">{x}°C</div>
-            </div>
-          </div>
-        ))}
-      </div>
-
+      <Container sx={{ mt: 4, display: 'flex', justifyContent: 'center' }}>
+          <CardContent>
+            <Box sx={{ textAlign: 'center', mb: 2 }}>
+              <Typography variant="h4" sx={{ color: '#000', fontFamily: 'Arial, sans-serif' }}>Next 5 Hours</Typography>
+            </Box>
+            {data.slice(0, 5).map((x, i) => (
+              <Card key={i} sx={{ backgroundColor: '#5d9cec', mb: 2, borderRadius: '8px', width: '300px' }}>
+                <CardContent>
+                  <Box className="temperature-container">
+                    <Typography variant="h4" sx={{ mb: 1, color: '#000', fontFamily: 'Arial, sans-serif' }}>Next {i + 1} Hour Temp:</Typography>
+                    <Typography variant="h5" className="temperature-data" sx={{ color: '#000', fontFamily: 'Arial, sans-serif' }}>{x}°C</Typography>
+                  </Box>
+                </CardContent>
+              </Card>
+            ))}
+          </CardContent>
+      </Container>
       <SimpleBottomNavigation />
     </>
   );

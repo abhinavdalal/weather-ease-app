@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
@@ -21,24 +21,25 @@ export default function SimpleBottomNavigation() {
           setValue(newValue);
         }}
         sx={{
-          backgroundColor: '#3f8cdd', 
-          borderTop: '1px solid #ccc', 
+          backgroundColor: '#3f8cdd',
+          borderTop: '0.5px solid #ccc',
+          display: 'flex', // Ensures horizontal display
         }}
       >
         <NavLink to="/Home" style={{ textDecoration: 'none' }}>
-          <BottomNavigationAction label="Homescreen" showLabel icon={<CottageIcon />} sx={{ fontSize: '14px', color: '#111' }} />
+          <BottomNavigationAction label="Homescreen" showLabel icon={<CottageIcon />} sx={{ fontSize: '15px', color: '#111' }} />
         </NavLink>
         <NavLink to="/temp" style={{ textDecoration: 'none' }}>
-          <BottomNavigationAction label="Updates" showLabel icon={<UpdateIcon />} sx={{ fontSize: '14px', color: '#111' }} />
+          <BottomNavigationAction label="Updates" showLabel icon={<UpdateIcon />} sx={{ fontSize: '15px', color: '#111' }} />
         </NavLink>
         <NavLink to="/motiv" style={{ textDecoration: 'none' }}>
-          <BottomNavigationAction label="Suggestions" showLabel icon={<FormatQuoteIcon />} sx={{ fontSize: '14px', color: '#111' }} />
+          <BottomNavigationAction label="Suggestions" showLabel icon={<FormatQuoteIcon />} sx={{ fontSize: '15px', color: '#111' }} />
         </NavLink>
         <NavLink to="/Help" style={{ textDecoration: 'none' }}>
-          <BottomNavigationAction label="Help" showLabel icon={<SosIcon/>} sx={{ fontSize: '14px', color: '#111' }} />
+          <BottomNavigationAction label="Help" showLabel icon={<SosIcon />} sx={{ fontSize: '15px', color: '#111' }} />
         </NavLink>
         <NavLink to="/Rec" style={{ textDecoration: 'none' }}>
-          <BottomNavigationAction label="Recipe" showLabel icon={<SoupKitchenIcon/>} sx={{ fontSize: '14px', color: '#111' }} />
+          <BottomNavigationAction label="Recipe" showLabel icon={<SoupKitchenIcon />} sx={{ fontSize: '15px', color: '#111' }} />
         </NavLink>
       </BottomNavigation>
     </Box>
