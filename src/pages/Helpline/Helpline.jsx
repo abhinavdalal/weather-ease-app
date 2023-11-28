@@ -16,21 +16,21 @@ const Helpline = () => {
           Emergency Helpline Numbers
         </Typography>
         <List sx={{ textAlign: 'center' }}>
-          <ListItem>In case of Fire: 911</ListItem>
-          <ListItem>In case of you need Police: 911</ListItem>
-          <ListItem>If you need Ambulance: 911</ListItem>
-          <ListItem>In case of a disaster: 1916</ListItem>
-          <ListItem>24×7 Helpline no. : 108</ListItem>
-          <ListItem>For Ambulance : 102</ListItem>
-          <ListItem>For Child Helpline : 1098</ListItem>
-          <ListItem>In case you need Police: 100</ListItem>
-          <ListItem>If you are stuck in Traffic: 1073</ListItem>
-          <ListItem>In case of an accident: 108</ListItem>
-          <ListItem>In case of emergency: 112</ListItem>
-          <ListItem>In case of a fire: 101</ListItem>
-          <ListItem>Fumigation Helpline number: 02223011958</ListItem>
-          <ListItem>to track your location: 1090</ListItem>
-          <ListItem>Emergency operation centre [Mumbai]: 1916, 02222694725</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of Fire: 911</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of you need Police: 911</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>If you need Ambulance: 911</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of a disaster: 1916</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>24×7 Helpline no. : 108</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>For Ambulance : 102</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>For Child Helpline : 1098</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case you need Police: 100</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>If you are stuck in Traffic: 1073</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of an accident: 108</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of emergency: 112</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of a fire: 101</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>Fumigation Helpline number: 02223011958</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>to track your location: 1090</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>Emergency operation centre [Mumbai]: 1916, 02222694725</ListItem>
         </List>
         <SimpleBottomNavigation />
       </div>

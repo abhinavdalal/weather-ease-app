@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
-import Grid from '@mui/material/Grid';
+import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
+import useTheme from "@mui/system/useTheme";
 import SimpleBottomNavigation from "../../components/BottomNavigationTest";
 import ResponsiveAppBar from "../../components/OpenBar";
-import './Home.css';
+import "./Home.css";
 
 const HomeScreen = () => {
+  const theme = useTheme();
+
   const [temperature, setTemperature] = useState(0);
   const [pm25, setPm25] = useState(0);
 
@@ -37,7 +40,7 @@ const HomeScreen = () => {
       return "public/assets/sunny.jpeg";
     } else if (temperature < 15) {
       // Display snow image URL
-      return "public/assets/snowing.png"; 
+      return "public/assets/snowing.png";
     } else {
       // Display clear sky image URL
       return "public/assets/clear.jpeg";
@@ -47,17 +50,27 @@ const HomeScreen = () => {
   return (
     <Container>
       <ResponsiveAppBar />
-      <Grid container spacing={3} justify="center" alignItems="center">
-        <Grid item xs={12} md={6}>
+      <Grid
+        container
+        spacing={3}
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+        style={{ minHeight: "100vh" }}
+      >
+        <Grid item xs={12} md={6} lg={4}>
           <div className="weather-container">
             <div className="header">Current Weather</div>
-            <img src={getWeatherImage()} alt="Weather Image" className="weather-image" />
+            <img
+              src={getWeatherImage()}
+              alt="Weather Image"
+              className="weather-image"
+            />
             <div className="temperature">
               The Temperature is {temperature}°C
             </div>
             <div className="temperature">
-              Air Quality Index is{" "}
-              {pm25 <= 175 ? "Good" : "Bad"}
+              Air Quality Index is {pm25 <= 175 ? "Good" : "Bad"}
             </div>
             <SimpleBottomNavigation />
           </div>
