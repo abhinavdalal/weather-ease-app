@@ -1,3 +1,7 @@
+# Weather-ease-app
+
+
+# To Deploy
 pushing to main branch should trigger deploy job that will update the github pages site
 
 # React + Vite
