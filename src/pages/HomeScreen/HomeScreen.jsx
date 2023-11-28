@@ -37,13 +37,13 @@ const HomeScreen = () => {
   const getWeatherImage = () => {
     if (temperature > 30) {
       // Display sunny image URL
-      return "public/assets/sunny.jpeg";
+      return "/assets/sunny.jpeg";
     } else if (temperature < 15) {
       // Display snow image URL
-      return "public/assets/snowing.png";
+     return "/assets/snowing.png"; 
     } else {
       // Display clear sky image URL
-      return "public/assets/clear.jpeg";
+      return "/assets/clear.jpeg";
     }
   };
 
