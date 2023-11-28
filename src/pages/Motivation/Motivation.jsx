@@ -11,27 +11,27 @@ import ResponsiveAppBar from '../../components/OpenBar';
 const QuotesData = [
   { 
     quote: "नमस्ते",
-    image: "public/assets/namaste.png",
+    image: "/assets/namaste.png",
   },
   { 
     quote: "If it's raining outside, remember to carry an umbrella or a raincoat.",
-    image: "public/assets/rain.jpeg",
+    image: "/assets/rain.jpeg",
   },
   {
     quote: "Check the air quality before engaging in outdoor exercises",
-    image: "public/assets/air quality.jpg",
+    image: "/assets/air quality.jpg",
   },
   {
     quote: "Plan indoor activities for days with heavy rain or storm",
-    image: "public/assets/indoor activities.jpg",
+    image: "/assets/indoor activities.jpg",
   },
   {
     quote: "Ensure your pets have shelter during inclement weather",
-    image: "public/assets/pets.jpg",
+    image: "/assets/pets.jpg",
   },
   {
     quote: "Pack a picnic on pleasant day and enjoy the outdoors",
-    image: "public/assets/picnic.jpg",
+    image: "/assets/picnic.jpg",
   },
   {
     quote: "Keep an eye on tide levels if you're near the coast",
@@ -55,7 +55,7 @@ const QuotesData = [
   },
   {
     quote: "Plan outdoor activities on days with clear skies",
-    image: "public/assets/sky.jpg",
+    image: "/assets/sky.jpg",
   },
   {
     quote: "Drive carefully during foggy conditions",
