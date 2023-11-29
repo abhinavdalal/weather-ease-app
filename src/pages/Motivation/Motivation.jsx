@@ -90,12 +90,12 @@ const QuotesData = [
     image: "https://media.istockphoto.com/id/533098559/photo/snow-kids.jpg?s=612x612&w=0&k=20&c=pl2MpKc3LtBafre3ak3oZPugqkFcZNyZEG_MXzIBx_Q=",
   },
   {
-    quote: "Wear sunscreen incase you are heading out",
+    quote: "Wear sunscreen incase you are heading out, Click here",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxr7Kdv2gsMucjTy-z1tv0Rz6VPnsf3h2hmQ&usqp=CAU",
     link:  "/Rec",
   },
   {
-    quote: "Don't forget to use the moisturiser to stay moisturized",
+    quote: "Don't forget to use the moisturiser to stay moisturized, Click here",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1WSjk1cNPRSIlGHMbVj4v-SK99zMMx63ekg&usqp=CAU",
     link:  "/Rec",
   },
