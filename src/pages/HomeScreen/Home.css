@@ -1,6 +1,5 @@
 .weather-container {
   text-align: center;
-  padding: 10px;
   background-color: #3f8cdd;
   color: #fff;
   border-radius: 7px;
@@ -9,8 +8,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Updated to center vertically */
-  height: 100vh; /* Updated to take full height of the viewport */
+  justify-content: center; 
+  width: 100%;
+  max-width: 800px;
+  height: 100vh; 
+  padding-top: 2px;
 }
 
 .header {
