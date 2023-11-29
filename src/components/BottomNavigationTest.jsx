@@ -13,7 +13,7 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{ width: '100%', paddingBottom: 'env(safe-area-inset-bottom)' }}>
+    <Box sx={{ paddingBottom: '8px' }}> 
       <BottomNavigation
         showLabels
         value={value}
@@ -23,7 +23,7 @@ export default function SimpleBottomNavigation() {
         sx={{
           backgroundColor: '#3f8cdd',
           borderTop: '0.5px solid #ccc',
-          display: 'flex', // Ensures horizontal display
+          display: 'flex',
         }}
       >
         <NavLink to="/Home" style={{ textDecoration: 'none' }}>

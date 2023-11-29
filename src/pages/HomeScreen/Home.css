@@ -1,6 +1,6 @@
 .weather-container {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 10px;
   background-color: #3f8cdd; 
   color: #fff; 
@@ -8,6 +8,8 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   font-family: "Arial", sans-serif;
   display: flex;
+  width :100%;
+  max-width: 600px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
