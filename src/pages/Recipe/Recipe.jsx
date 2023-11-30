@@ -13,12 +13,12 @@ const Recipe = () => {
         2 tablespoons besan (gram flour)<br />
         1 tablespoon yogurt<br />
         1 teaspoon honey<br />
-        A pinch of turmeric (optional)<br />
+        A pinch of turmeric <br />
         Rosewater or plain water (as needed for consistency)
       </p>
       <p className="recipe-instructions">
         <strong>Instructions:</strong><br />
-        1. In a bowl, mix besan, yogurt, honey, and turmeric (if using).<br />
+        1. In a bowl, mix besan, yogurt, honey, and turmeric .<br />
         2. Add rosewater or water gradually to form a smooth paste with a spreadable consistency.<br />
         3. Ensure that the mixture is free of lumps and well-blended.<br />
         4. Apply the pack to your face and neck, avoiding the eye area.<br />

@@ -29,7 +29,7 @@ const Helpline = () => {
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of emergency: 112</ListItem>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of a fire: 101</ListItem>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>Fumigation Helpline number: 02223011958</ListItem>
-          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>to track your location: 1090</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>To track your location: 1090</ListItem>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>Emergency operation centre [Mumbai]: 1916, 02222694725</ListItem>
         </List>
         <SimpleBottomNavigation />
