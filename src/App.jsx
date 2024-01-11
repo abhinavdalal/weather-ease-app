@@ -1,4 +1,3 @@
-
 import './App.css'
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -9,7 +8,6 @@ import { Home } from '@mui/icons-material';
 import HomeScreen from "./pages/HomeScreen/HomeScreen.jsx";
 import Helpline from './pages/Helpline/Helpline.jsx';
 import Recipe from './pages/Recipe/Recipe.jsx';
-
 
 export default function App() {
   return (

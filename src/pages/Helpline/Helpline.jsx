@@ -16,9 +16,9 @@ const Helpline = () => {
           Emergency Helpline Numbers
         </Typography>
         <List sx={{ textAlign: 'center' }}>
-          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of Fire: 911</ListItem>
-          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of you need Police: 911</ListItem>
-          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>If you need Ambulance: 911</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of Fire: 101</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of you need Police: 100</ListItem>
+          <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>If you need Ambulance: 102</ListItem>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of a disaster: 1916</ListItem>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>24×7 Helpline no. : 108</ListItem>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>For Ambulance : 102</ListItem>
