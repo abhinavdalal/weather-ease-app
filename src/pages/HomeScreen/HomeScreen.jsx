@@ -61,14 +61,14 @@ const HomeScreen = () => {
       >
         <Grid item xs={12} md={6} lg={4}>
           <div className="weather-container">
-            <div className="header">Current Weather</div>
+            <div className="header">Current Weather   वर्तमान मौसम</div>
             <img
               src={getWeatherImage()}
               alt="Weather Image"
               className="weather-image"
             />
             <div className="temperature">
-              The Temperature is {temperature}°C
+              The Temperature is (तापमान है) {temperature}°C
             </div>
             <div className="temperature">
               Air Quality Index is {pm25 <= 175 ? "Good" : "Bad"}
