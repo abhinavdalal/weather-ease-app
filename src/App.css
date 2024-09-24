@@ -2,7 +2,7 @@
   max-width: 800px;
   width: 100%; 
   margin: 0 auto;
-  /* padding: 2rem; */
+  padding: 2rem;
   text-align: center;
   align-items: center;
 }
@@ -42,3 +42,51 @@
 .read-the-docs {
   color: #888;
 }
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root container */
+/* #root {
+  @apply flex items-center justify-center w-full h-screen text-center p-4;
+}
+
+/* Logo Styling */
+/* .logo {
+  @apply h-24 p-6 transition-all duration-300 ease-in-out;
+}
+
+.logo:hover {
+  @apply filter drop-shadow-[0_0_2em_rgba(100,108,255,0.67)];
+}
+
+.logo.react:hover {
+  @apply filter drop-shadow-[0_0_2em_rgba(97,218,251,0.73)];
+} */
+
+/* Logo spin animation */
+/* @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */
+
+/* Card Styling */
+/* .card {
+  @apply p-8;
+} */
+
+/* Read the Docs text */
+/* .read-the-docs {
+  @apply text-gray-500;
+} */ 

@@ -67,3 +67,62 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Existing Custom Styles */
+/* :root {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Tailwind classes will handle most of the responsiveness */
+/* a {
+  @apply font-medium text-blue-600 no-underline hover:text-blue-500;
+}
+
+body {
+  @apply m-0 flex items-center justify-center min-w-[320px] min-h-screen bg-gray-900 text-white;
+} */
+
+/* h1 {
+  @apply text-4xl font-bold leading-tight;
+}
+
+button {
+  @apply rounded-lg border border-transparent px-3 py-2 text-base font-medium bg-gray-800 cursor-pointer transition duration-200;
+}
+button:hover {
+  @apply border-blue-600;
+}
+button:focus, button:focus-visible {
+  @apply outline-none ring-2 ring-blue-600;
+} */
+
+/* Light Mode Adjustments */
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    @apply bg-gray-100;
+  }
+}  */
