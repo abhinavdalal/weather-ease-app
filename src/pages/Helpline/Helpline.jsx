@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Helpline.css';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
+// import List from '@mui/material/List';
+// import ListItem from '@mui/material/ListItem';
+import Select from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
 import SimpleBottomNavigation from "../../components/BottomNavigationTest";
 import ResponsiveAppBar from "../../components/OpenBar";
+import EnglishList from './components/EnglishList';
+import HindiList from './components/HindiList';
 
 const Helpline = () => {
+  const [currentLanguage, setCurrentLanguage] = useState('English');
+  const handleChange = (event) => {
+    setCurrentLanguage(event.target.value);
+  };
+
   return (
     <Container>
       <ResponsiveAppBar />
@@ -15,8 +24,23 @@ const Helpline = () => {
         <Typography variant="h4" align="center" sx={{ mt: 4, mb: 2 }}>
           Emergency Helpline Numbers
         </Typography>
-       
-        <List sx={{ textAlign: 'center' }}>
+
+        <Select
+    labelId="demo-simple-select-label"
+    id="demo-simple-select"
+    value={currentLanguage}
+    label="Language"
+    onChange={handleChange}
+  >
+    <MenuItem value={"English"}>English</MenuItem>
+    <MenuItem value={'Hindi'}>Hindi</MenuItem>
+  </Select>
+
+        <p>Current Language: {currentLanguage}</p>
+
+        { currentLanguage == "English" ? <EnglishList /> : null } 
+        { currentLanguage == "Hindi" ? <HindiList /> : null }
+        {/* <List sx={{ textAlign: 'center' }}>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of Fire (आग लगने की स्थिति में): 101</ListItem>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>In case of you need Police (यदि आपको पुलिस की आवश्यकता है): 100</ListItem>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>If you need Ambulance (अगर आपको एम्बुलेंस की जरूरत है): 102</ListItem>
@@ -32,7 +56,7 @@ const Helpline = () => {
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>Fumigation Helpline number (धूमन हेल्पलाइन नंबर): 02223011958</ListItem>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>To track your location (अपना स्थान ट्रैक करने के लिए): 1090</ListItem>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>Emergency operation centre [Mumbai] (आपातकालीन संचालन केंद्र): 1916, 02222694725</ListItem>
-        </List>
+        </List> */}
         <SimpleBottomNavigation />
       </div>
     </Container>
