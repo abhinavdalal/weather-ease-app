@@ -48,8 +48,11 @@ const HomeScreen = () => {
   };
 
   return (
+    <>
+    <ResponsiveAppBar />
     <Container>
-      <ResponsiveAppBar />
+
+    {/* 
       <Grid
         container
         spacing={3}
@@ -73,11 +76,12 @@ const HomeScreen = () => {
             <div className="temperature">
               Air Quality Index is {pm25 <= 175 ? "Good" : "Bad"}
             </div>
-            <SimpleBottomNavigation />
           </div>
         </Grid>
-      </Grid>
+      </Grid>*/}
     </Container>
+     <SimpleBottomNavigation /> 
+    </>
   );
 };
 

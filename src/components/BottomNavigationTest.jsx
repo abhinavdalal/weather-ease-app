@@ -24,7 +24,7 @@ export default function SimpleBottomNavigation() {
           backgroundColor: '#3f8cdd',
           borderTop: '0.5px solid #ccc',
           display: 'flex',
-          width: '95vw',
+          // width: '95vw',
         }}
       >
         <NavLink to="/Home" style={{ textDecoration: 'none' }}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
-import Toolbar from '@mui/material/Toolbar';
+// import Toolbar from '@mui/material/Toolbar';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
@@ -12,7 +12,7 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
-        <Toolbar>
+        {/* <Toolbar> */}
           <Grid container alignItems="center" justifyContent="space-between">
             <Grid item>
               <img
@@ -29,7 +29,7 @@ function ResponsiveAppBar() {
               />
             </Grid>
           </Grid>
-        </Toolbar>
+        {/* </Toolbar> */}
       </Container>
     </AppBar>
   );
