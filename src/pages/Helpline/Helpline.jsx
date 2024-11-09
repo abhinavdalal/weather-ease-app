@@ -4,39 +4,24 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 // import List from '@mui/material/List';
 // import ListItem from '@mui/material/ListItem';
-import Select from '@mui/material/Select';
-import MenuItem from '@mui/material/MenuItem';
+
 import SimpleBottomNavigation from "../../components/BottomNavigationTest";
 import ResponsiveAppBar from "../../components/OpenBar";
 import EnglishList from './components/EnglishList';
 import HindiList from './components/HindiList';
 
-const Helpline = () => {
-  const [currentLanguage, setCurrentLanguage] = useState('English');
-  const handleChange = (event) => {
-    setCurrentLanguage(event.target.value);
-  };
+const Helpline = ({currentLanguage}) => {
+  
+
 
   return (
     <Container>
-      <ResponsiveAppBar />
       <div className="helpline-container">
         <Typography variant="h4" align="center" sx={{ mt: 4, mb: 2 }}>
           Emergency Helpline Numbers
         </Typography>
 
-        <Select
-    labelId="demo-simple-select-label"
-    id="demo-simple-select"
-    value={currentLanguage}
-    label="Language"
-    onChange={handleChange}
-  >
-    <MenuItem value={"English"}>English</MenuItem>
-    <MenuItem value={'Hindi'}>Hindi</MenuItem>
-  </Select>
-
-        <p>Current Language: {currentLanguage}</p>
+        {/* <p>Current Language: {currentLanguage}</p> */}
 
         { currentLanguage == "English" ? <EnglishList /> : null } 
         { currentLanguage == "Hindi" ? <HindiList /> : null }

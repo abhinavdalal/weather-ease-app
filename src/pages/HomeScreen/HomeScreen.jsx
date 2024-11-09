@@ -49,8 +49,7 @@ const HomeScreen = () => {
 
   return (
     <>
-    <ResponsiveAppBar />
-    <Container>
+    {/* <Container> */}
 
     {/* 
       <Grid
@@ -62,8 +61,8 @@ const HomeScreen = () => {
         
         style={{ minHeight: "100vh", paddingTop: "10px"}}
       >
-        <Grid item xs={12} md={6} lg={4}>
-          <div className="weather-container">
+        <Grid item xs={12} md={6} lg={4}> */}
+
             <div className="header">Current Weather   वर्तमान मौसम</div>
             <img
               src={getWeatherImage()}
@@ -76,11 +75,9 @@ const HomeScreen = () => {
             <div className="temperature">
               Air Quality Index is {pm25 <= 175 ? "Good" : "Bad"}
             </div>
-          </div>
-        </Grid>
+        {/* </Grid>
       </Grid>*/}
-    </Container>
-     <SimpleBottomNavigation /> 
+    {/* </Container> */}
     </>
   );
 };

@@ -5,28 +5,10 @@ import ResponsiveAppBar from "../../components/OpenBar";
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 
-const Recipe = () => {
-  const [currentLanguage, setCurrentLanguage] = useState('English');
-
-  const handleChange = (event) => {
-    setCurrentLanguage(event.target.value);
-  };
+const Recipe = ({currentLanguage}) => {
 
   return (
     <div className="recipe-container">
-      <ResponsiveAppBar />
-      
-      {/* Language Selection */}
-      <Select
-        labelId="language-select-label"
-        id="language-select"
-        value={currentLanguage}
-        onChange={handleChange}
-        sx={{ margin: '1rem 0' }}
-      >
-        <MenuItem value="English">English</MenuItem>
-        <MenuItem value="Hindi">Hindi</MenuItem>
-      </Select>
 
       <h1 className="recipe-name">Besan Moisturizing Face Pack</h1>
       

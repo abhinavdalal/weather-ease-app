@@ -23,9 +23,8 @@ function Possibilities() {
   };
 
   return (
-    <>
-      <ResponsiveAppBar />
-      <Container sx={{ mt: 4, display: 'flex', justifyContent: 'center' }}>
+    // <>
+      // <Container sx={{ mt: 4, display: 'flex', justifyContent: 'center' }}>
           <CardContent>
             <Box sx={{ textAlign: 'center', mb: 2 }}>
               <Typography variant="h4" sx={{ color: '#000', fontFamily: 'Arial, sans-serif' }}>Next 5 Hours</Typography>
@@ -41,9 +40,8 @@ function Possibilities() {
               </Card>
             ))}
           </CardContent>
-      </Container>
-      <SimpleBottomNavigation />
-    </>
+      // </Container>
+    // </>
   );
 }
 
