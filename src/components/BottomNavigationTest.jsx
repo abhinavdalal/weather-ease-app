@@ -14,7 +14,7 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{ paddingBottom: '8px' }}>
+    <Box sx={{ paddingBottom: '4px' }}>
       <BottomNavigation
         showLabels
         value={value}
@@ -25,25 +25,56 @@ export default function SimpleBottomNavigation() {
           backgroundColor: '#3f8cdd',
           borderTop: '0.5px solid #ccc',
           display: 'flex',
+          height: '48px' // Reduce the height of the BottomNavigation
         }}
       >
         <NavLink to="/Home" style={{ textDecoration: 'none' }}>
-          <BottomNavigationAction label="Homescreen" showLabel icon={<CottageIcon />} sx={{ fontSize: '15px', color: '#111' }} />
+          <BottomNavigationAction
+            label="Home"
+            showLabel
+            icon={<CottageIcon sx={{ fontSize: '18px' }} />}
+            sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}
+          />
         </NavLink>
         <NavLink to="/temp" style={{ textDecoration: 'none' }}>
-          <BottomNavigationAction label="Updates" showLabel icon={<UpdateIcon />} sx={{ fontSize: '15px', color: '#111' }} />
+          <BottomNavigationAction
+            label="Updates"
+            showLabel
+            icon={<UpdateIcon sx={{ fontSize: '18px' }} />}
+            sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}
+          />
         </NavLink>
         <NavLink to="/motiv" style={{ textDecoration: 'none' }}>
-          <BottomNavigationAction label="Suggestions" showLabel icon={<FormatQuoteIcon />} sx={{ fontSize: '15px', color: '#111' }} />
+          <BottomNavigationAction
+            label="Suggestions"
+            showLabel
+            icon={<FormatQuoteIcon sx={{ fontSize: '18px' }} />}
+            sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}
+          />
         </NavLink>
         <NavLink to="/Help" style={{ textDecoration: 'none' }}>
-          <BottomNavigationAction label="Help" showLabel icon={<SosIcon />} sx={{ fontSize: '15px', color: '#111' }} />
+          <BottomNavigationAction
+            label="Help"
+            showLabel
+            icon={<SosIcon sx={{ fontSize: '18px' }} />}
+            sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}
+          />
         </NavLink>
         <NavLink to="/Rec" style={{ textDecoration: 'none' }}>
-          <BottomNavigationAction label="Recipe" showLabel icon={<SoupKitchenIcon />} sx={{ fontSize: '15px', color: '#111' }} />
+          <BottomNavigationAction
+            label="Recipe"
+            showLabel
+            icon={<SoupKitchenIcon sx={{ fontSize: '18px' }} />}
+            sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}
+          />
         </NavLink>
         <NavLink to="/aware" style={{ textDecoration: 'none' }}>
-          <BottomNavigationAction label="Awareness" showLabel icon={<HealthAndSafetyIcon />} sx={{ fontSize: '15px', color: '#111' }} />
+          <BottomNavigationAction
+            label="Awareness"
+            showLabel
+            icon={<HealthAndSafetyIcon sx={{ fontSize: '18px' }} />}
+            sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}
+          />
         </NavLink>
       </BottomNavigation>
     </Box>
