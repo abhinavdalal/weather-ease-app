@@ -8,12 +8,13 @@ import UpdateIcon from '@mui/icons-material/Update';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import SosIcon from '@mui/icons-material/Sos';
 import SoupKitchenIcon from '@mui/icons-material/SoupKitchen';
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{ paddingBottom: '8px' }}> 
+    <Box sx={{ paddingBottom: '8px' }}>
       <BottomNavigation
         showLabels
         value={value}
@@ -24,7 +25,6 @@ export default function SimpleBottomNavigation() {
           backgroundColor: '#3f8cdd',
           borderTop: '0.5px solid #ccc',
           display: 'flex',
-          // width: '95vw',
         }}
       >
         <NavLink to="/Home" style={{ textDecoration: 'none' }}>
@@ -41,6 +41,9 @@ export default function SimpleBottomNavigation() {
         </NavLink>
         <NavLink to="/Rec" style={{ textDecoration: 'none' }}>
           <BottomNavigationAction label="Recipe" showLabel icon={<SoupKitchenIcon />} sx={{ fontSize: '15px', color: '#111' }} />
+        </NavLink>
+        <NavLink to="/aware" style={{ textDecoration: 'none' }}>
+          <BottomNavigationAction label="Awareness" showLabel icon={<HealthAndSafetyIcon />} sx={{ fontSize: '15px', color: '#111' }} />
         </NavLink>
       </BottomNavigation>
     </Box>

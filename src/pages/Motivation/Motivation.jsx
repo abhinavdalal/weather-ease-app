@@ -26,10 +26,10 @@ const QuotesData = [
   },
   {
     quote: "Ensure your pets have shelter during inclement weather. सुनिश्चित करें कि खराब मौसम के दौरान आपके पालतू जानवरों को आश्रय मिले",
-    image: <img src="C:/Users/monica.thadani/Desktop/CODING/pets.jpg" alt="A group of pets including a dog and a cat" />
+    image: "public/assets/pets.jpg" 
  
 
-    //"/assets/pets.jpg",
+    
   },
   {
     quote: "Pack a picnic on pleasant day and enjoy the outdoors.  सुखद दिन पर एक पिकनिक पैक करें और बाहर का आनंद लें",
@@ -83,7 +83,7 @@ const QuotesData = [
   },
   {
     quote: "Consider wearing a hat or a scarf to protect yourself from the sun.  खुद को धूप से बचाने के लिए टोपी या स्कार्फ पहनने पर विचार करें",
-    image: "/assets/kid_hat.jpg",
+    image: "public/assets/kids_hat.jpg",
   },
   {
     quote: "Check for severe weather alerts before heading out.  बाहर निकलने से पहले गंभीर मौसम चेतावनियों की जाँच करें",
@@ -120,7 +120,7 @@ const Motivation = () => {
 
   return (
     <>
-      <ResponsiveAppBar />
+    
       <Container sx={{ mt: 4, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Card className="quote-card" sx={{ maxWidth: 400, marginBottom: 2 }}>
           <CardContent>
@@ -140,7 +140,7 @@ const Motivation = () => {
           Change Quote
         </Button>
       </Container>
-      <BottomNavigation />
+      
     </>
   );
 };

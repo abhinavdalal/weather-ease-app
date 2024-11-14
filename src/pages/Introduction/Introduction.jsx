@@ -10,7 +10,6 @@ function Introduction() {
   return (
     <>
       {/* <div className='font-bold	text-2xl'>testing</div> */}
-      <ResponsiveAppBar />
       <Container sx={{ mt: 4, backgroundColor: '#ADD8E6', padding: '20px', borderRadius: '10px' }}>
         <Box sx={{ textAlign: 'center', marginBottom: 4 }}>
           <div className="intro-container"></div>

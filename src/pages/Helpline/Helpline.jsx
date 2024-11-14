@@ -42,7 +42,6 @@ const Helpline = ({currentLanguage}) => {
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>To track your location (अपना स्थान ट्रैक करने के लिए): 1090</ListItem>
           <ListItem sx={{ fontSize: '1.2rem', textAlign: 'center' }}>Emergency operation centre [Mumbai] (आपातकालीन संचालन केंद्र): 1916, 02222694725</ListItem>
         </List> */}
-        <SimpleBottomNavigation />
       </div>
     </Container>
   );
