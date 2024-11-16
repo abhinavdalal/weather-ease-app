@@ -14,8 +14,8 @@ const QuotesData = [
     image: "/assets/namaste.png",
   },
   { 
-    quote: "If it's raining outside, remember to carry an umbrella or a raincoat.       अगर बाहर बारिश हो रही है तो छाता या रेनकोट ले जाना याद रखें।",
-    image: "/assets/rain.jpeg",
+   // quote: "If it's raining outside, remember to carry an umbrella or a raincoat.       अगर बाहर बारिश हो रही है तो छाता या रेनकोट ले जाना याद रखें।",
+   // image: "/assets/rain.jpeg",
   },
   { qoute:"Check the air quality before engaging in outdoor exercises  बाहरी व्यायाम करने से पहले हवा की गुणवत्ता की जाँच करें ",
     image: "/assets/air quality.jpg",
