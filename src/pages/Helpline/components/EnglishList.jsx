@@ -28,7 +28,7 @@ function EnglishList() {
     }}
   >
     <img 
-      src="/assets/fire.jpg" 
+      src="public/assets/fire.jpg" 
       alt="Description of the image" 
       width="40" 
       height="30" 
