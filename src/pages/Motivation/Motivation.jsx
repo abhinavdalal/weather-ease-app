@@ -26,7 +26,7 @@ const QuotesData = [
   },
   {
     quote: "Ensure your pets have shelter during inclement weather. सुनिश्चित करें कि खराब मौसम के दौरान आपके पालतू जानवरों को आश्रय मिले",
-    image: "public/assets/pets.jpg" 
+    image: "/assets/pets.jpg" 
  
 
     
@@ -83,7 +83,7 @@ const QuotesData = [
   },
   {
     quote: "Consider wearing a hat or a scarf to protect yourself from the sun.  खुद को धूप से बचाने के लिए टोपी या स्कार्फ पहनने पर विचार करें",
-    image: "public/assets/kids_hat.jpg",
+    image: "/assets/kids_hat.jpg",
   },
   {
     quote: "Check for severe weather alerts before heading out.  बाहर निकलने से पहले गंभीर मौसम चेतावनियों की जाँच करें",
