@@ -55,7 +55,7 @@ function EnglishList() {
                     }}
                 >
                     <img
-                        src="public/assets/ambulance.jpg"
+                        src="/assets/ambulance.jpg"
                         alt="Description of the image"
                         width="50"
                         height="60" />
@@ -80,7 +80,7 @@ function EnglishList() {
                     }}
                 >
                     <img
-                        src="public/assets/Child-Helpline.jpg"
+                        src="/assets/Child-Helpline.jpg"
                         alt="Description of the image"
                         width="60"
                         height="80" />
@@ -105,7 +105,7 @@ function EnglishList() {
                     }}
                 >
                     <img
-                        src="public/assets/traffic.jpg"
+                        src="/assets/traffic.jpg"
                         alt="Description of the image"
                         width="70"
                         height="80" />
@@ -130,7 +130,7 @@ function EnglishList() {
                     }}
                 >
                     <img
-                        src="public/assets/EMERGENCY.jpg"
+                        src="/assets/EMERGENCY.jpg"
                         alt="Description of the image"
                         width="90"
                         height="90" />
