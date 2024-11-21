@@ -5,7 +5,17 @@
   /* padding: 2rem; */
   text-align: center;
   align-items: center;
+  
 }
+
+#root button {
+  background-color: #3498dbda; /* Button background */
+  color: black;             /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+} 
 
 .logo {
   height: 6em;

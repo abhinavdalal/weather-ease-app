@@ -10,7 +10,8 @@ import AcUnitIcon from '@mui/icons-material/AcUnit';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import CleaningServicesIcon from '@mui/icons-material/CleaningServices';
 import FilterDramaIcon from '@mui/icons-material/FilterDrama';
-import './awareness.css';
+import CheckroomIcon from '@mui/icons-material/Checkroom';
+
 
 const style = {
     position: 'absolute',
@@ -28,14 +29,18 @@ const style = {
 
 const descriptions = {
     Dengue: {
-        English: `Symptoms: High fever, severe headache, pain behind the eyes, joint and muscle pain, rash.
+        English: `Symptoms: High fever, severe headache, pain behind the eyes, joint & muscle pain and rash.
 
 Prevention Tips:
 - Use mosquito repellents.
 - Sleep under a mosquito net.
 - Avoid standing water around the home.
 
-Safe Remedies:
+
+
+
+
+                              Safe Remedies:
 - Papaya Leaf Extract: Known to help increase platelet count, papaya leaf juice (one tablespoon twice daily) may aid recovery.
 - Hydration: Drink plenty of water, coconut water, and fruit juices to stay hydrated and support immune function.`,
         Hindi: `लक्षण: उच्च बुखार, तेज़ सिरदर्द, आँखों के पीछे दर्द, जोड़ों और मांसपेशियों में दर्द, चकत्ते।
@@ -51,7 +56,7 @@ Safe Remedies:
     },
 
     Malaria: {
-        English: `Symptoms: Fever, chills, sweating, headache, nausea, vomiting.
+        English: `Symptoms:- Fever, chills, sweating, headache, nausea, vomiting.
 
 Prevention Tips:
 - Sleep under a mosquito net.
@@ -59,7 +64,7 @@ Prevention Tips:
 - Avoid outdoor activities at dusk.
 
 Safe Remedies:
-- Neem Leaves: Neem has anti-malarial properties. Boil a few leaves in water and take once a day as a preventive measure.
+-  Boil few Neem leaves in water and take once a day as a preventive measure.
 - Cinnamon Tea: Cinnamon is believed to help reduce inflammation. Boil a stick in water, add honey, and drink once daily.`,
         Hindi: `लक्षण: बुखार, ठंड लगना, पसीना आना, सिरदर्द, मतली, उल्टी।
 
@@ -69,7 +74,7 @@ Safe Remedies:
 - सूर्यास्त के समय बाहर जाने से बचें।
 
 सुरक्षित उपाय:
-- नीम के पत्ते: नीम में मलेरिया-रोधी गुण होते हैं। कुछ पत्तों को पानी में उबालें और एक दिन में एक बार सेवन करें।
+- निवारक उपाय के रूप में नीम की कुछ पत्तियों को पानी में उबालें और दिन में एक बार लें।
 - दालचीनी की चाय: दालचीनी सूजन को कम करने में सहायक हो सकती है। एक चम्मच शहद के साथ पीएं।`
     },
 
@@ -101,7 +106,7 @@ Safe Remedies:
     },
 
     "Seasonal Changes": {
-        English: `Monsoon Season Diseases:
+        English: `
 
 1. Chikungunya
 Symptoms: Sudden high fever, joint pain, rash, headache, fatigue.
@@ -152,7 +157,7 @@ Safe Remedies:
     },
 
     "Fumigation Services": {
-        English: `Fumigation services are essential for preventing the spread of vector-borne diseases by controlling mosquito and pest populations in areas with high infection risks.
+    English: `Fumigation services are essential for preventing the spread of vector-borne diseases by controlling mosquito and pest populations in areas with high infection risks.
 
 Service Details:
 - Effective against mosquitoes, flies, and other insects.
@@ -161,8 +166,14 @@ Service Details:
 
 Recommended Frequency:
 - Monthly fumigation in high-risk areas.
-- Before and during peak mosquito season for best results.`,
-        Hindi: `फ्यूमिगेशन सेवाएं मच्छरों और कीटों की आबादी को नियंत्रित करने के लिए आवश्यक हैं, जिससे संक्रमण की उच्च जोखिम वाले क्षेत्रों में रोग फैलने से रोका जा सकता है।
+- Before and during peak mosquito season for best results.
+
+Fumigation services:
+- 1916
+- 91-8510036600
+`,
+
+    Hindi: `फ्यूमिगेशन सेवाएं मच्छरों और कीटों की आबादी को नियंत्रित करने के लिए आवश्यक हैं, जिससे संक्रमण की उच्च जोखिम वाले क्षेत्रों में रोग फैलने से रोका जा सकता है।
 
 सेवा विवरण:
 - मच्छरों, मक्खियों और अन्य कीड़ों के खिलाफ प्रभावी।
@@ -171,7 +182,85 @@ Recommended Frequency:
 
 अनुशंसित आवृत्ति:
 - उच्च जोखिम वाले क्षेत्रों में मासिक फ्यूमिगेशन।
-- सर्वोत्तम परिणामों के लिए मच्छर के चरम मौसम से पहले और उसके दौरान।`
+- सर्वोत्तम परिणामों के लिए मच्छर के चरम मौसम से पहले और उसके दौरान।
+
+
+धूमन सेवाएं:
+-1916
+-91-8510036600
+`
+},
+
+    "Weather Ready Essentials": {
+        English: `### 1. Clothing Essentials for Various Weather Conditions
+
+#### Summer
+- **Clothing**: Choose affordable, lightweight fabrics like cotton. Opt for breathable options such as T-shirts, cotton dresses, and shorts for comfort in the heat.
+- **Footwear**: Sandals or flip-flops are cost-effective and ideal for hot weather, providing ventilation and comfort.
+
+#### Monsoon (Rainy Season)
+- **Clothing**: Select quick-dry fabrics such as lightweight rain jackets, or repurpose old T-shirts and pants that dry easily. Consider using clothes you don't mind getting wet or damaged.
+- **Footwear**: Waterproof rubber boots are essential in rainy conditions, but if unavailable, durable plastic sandals or shoes that dry quickly after getting wet are a good alternative.
+
+#### Winter
+- **Clothing**: Layer with sweaters, jackets, and scarves (or dupattas used as scarves) to keep warm. Layering is key to adjusting to varying temperatures.
+- **Footwear**: Choose boots or sturdy shoes to protect your feet from the cold and wet conditions. Don’t forget thick socks for added warmth.
+Masks and Respiratory Protection
+
+ N95 Masks
+Use: During poor air quality, dust storms, or respiratory outbreaks.
+Precautions: Replace regularly (every 2-3 days).
+
+Surgical Masks
+Use: In crowded places or during flu season.
+Precautions: Discard after each use.
+
+Cloth Masks
+Use: Daily activities, in crowded places.
+Precautions: Wash after each use, ensure full coverage`,
+        Hindi: `### 1. विभिन्न मौसम स्थितियों के लिए आवश्यक वस्त्र
+
+#### गर्मी
+- **कपड़े**: कॉटन जैसे किफायती, हल्के कपड़े चुनें - टी-शर्ट, सूती कपड़े और शॉर्ट्स आरामदायक होते हैं 
+- **जूते**: सैंडल या फ्लिप-फ्लॉप अक्सर गर्म मौसम के लिए सबसे किफायती और आरामदायक जूते होते हैं। 
+
+#### मानसून (बरसात का मौसम)
+- **कपड़े**: जल्दी सूखने वाले कपड़े, जैसे हल्के रेन जैकेट या पुरानी टी-शर्ट और पैंट जो आसानी से सूख जाते हैं। बरसात के मौसम के लिए पुराने कपड़ों को दोबारा इस्तेमाल करने पर विचार करें।
+- **जूते**: जलरोधक रबर के जूते आवश्यक हो सकते हैं, लेकिन यदि अनुपलब्ध हैं, तो टिकाऊ प्लास्टिक के सैंडल या जूते जो भीगने के बाद आसानी से सूख सकते हैं।
+
+#### सर्दी 
+- **कपड़े**: स्वेटर, जैकेट और दुपट्टे जिनका उपयोग स्कार्फ के रूप में किया जा सकता है 
+- **जूते**: जूते या मजबूत जूते जो ठंड और गीलेपन से बचाने में मदद कर सकते हैं। अपने पैरों को मोज़े से ढककर रखें 
+
+### 2. मौसम की स्थिति के लिए प्राथमिक चिकित्सा किट
+
+#### ग्रीष्म/गर्मी:
+- गर्मी से संबंधित बीमारियों को रोकने के लिए नमक, चीनी और पानी जैसी बुनियादी सामग्री का उपयोग करके DIY पुनर्जलीकरण समाधान।
+- कूलिंग जेल या एलोवेरा (स्थानीय स्तर पर मुफ्त में उगाया जा सकता है या कम लागत पर खरीदा जा सकता है)।
+- मामूली कट और खरोंच के लिए बैंड-एड्स।
+
+#### मानसून/बारिश:
+- मच्छर दूर भागने वाला 
+- सरल एंटीसेप्टिक समाधान (मामूली काटने या घावों के इलाज के लिए प्रभावी)।
+- कट या फफोले के लिए जलरोधक पट्टियाँ।
+
+#### जाड़े की सर्दी:
+- फटने से बचाने के लिए लिप बाम।
+- साधारण हैंड वार्मर (जिसे कपड़े के पाउच में नमक और चावल का उपयोग करके घर पर बनाया जा सकता है)।
+- शुष्क त्वचा को रोकने के लिए वैसलीन या गाढ़ा लोशन। 
+मास्क और श्वसन सुरक्षा
+
+ N95 मास्क
+उपयोग: खराब वायु गुणवत्ता, धूल भरी आँधी, या श्वसन प्रकोप के दौरान।
+सावधानियां: नियमित रूप से बदलें (हर 2-3 दिन में)।
+
+सर्जिकल मास्क
+उपयोग: भीड़-भाड़ वाली जगहों पर या फ्लू के मौसम में।
+सावधानियाँ: प्रत्येक उपयोग के बाद त्याग दें।
+
+कपड़े का मास्क
+उपयोग: दैनिक गतिविधियाँ, भीड़-भाड़ वाली जगहों पर।
+सावधानियां: प्रत्येक उपयोग के बाद धोएं, पूर्ण कवरेज सुनिश्चित क`
     }
 };
 
@@ -192,7 +281,7 @@ const Awareness = ({ currentLanguage }) => {
                 {currentLanguage === 'English' ? 'Health Awareness' : 'स्वास्थ्य जागरूकता'}
             </Typography>
             <List sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                {["Dengue", "Malaria", "Seasonal Diseases", "Seasonal Changes", "Fumigation Services"].map((item) => (
+                {["Dengue", "Malaria", "Seasonal Diseases", "Seasonal Changes", "Fumigation Services","Weather Ready Essentials"].map((item) => (
                     <ListItem
                         key={item}
                         onClick={() => handleOpen(item)}
@@ -212,6 +301,7 @@ const Awareness = ({ currentLanguage }) => {
                             {item === "Seasonal Diseases" && <LocalHospitalIcon color="error" />}
                             {item === "Seasonal Changes" && <FilterDramaIcon color="info" />}
                             {item === "Fumigation Services" && <CleaningServicesIcon color="action" />}
+                            {item === "Weather Ready Essentials" && <CheckroomIcon color="success" />}
                         </ListItemIcon>
                         <ListItemText primary={item} sx={{ color: 'black' }} />
                     </ListItem>
