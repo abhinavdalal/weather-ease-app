@@ -29,9 +29,9 @@ const descriptions = {
 "Remedies":" अदरक की चाय, नीलगिरी के तेल के साथ भाप।"}
     },
 
-"Seasonal Changes": {
+"Chikungunya": {
     English: {
-        "Symptoms": "High fever, joint pain, rash, fatigue.",
+        "Symptoms": "(Symptoms of Chikungunya)High fever, joint pain, rash, fatigue.",
         "Prevention": "Use mosquito repellents, wear long-sleeved clothing, avoid stagnant water.",
         "Remedies": "Turmeric milk, ginger tea."
     },

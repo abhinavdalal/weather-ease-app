@@ -63,7 +63,7 @@ const descriptions = {
 "Remedies":" अदरक की चाय, नीलगिरी के तेल के साथ भाप।"}
     },
 
-    "Seasonal Changes": {
+    "Chikungunya": {
         English: {" Symptoms":" (Chikungunya Symptoms)High fever, joint pain, rash, fatigue.",
 "Prevention":" Use mosquito repellents, wear long-sleeved clothing, avoid stagnant water.",
 "Remedies":" Turmeric milk, ginger tea."},
@@ -166,7 +166,7 @@ const Awareness = ({ currentLanguage }) => {
         </AccordionSummary>
         <AccordionDetails>
         <List sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                {["Dengue", "Malaria", "Seasonal Diseases", "Seasonal Changes"].map((item) => (
+                {["Dengue", "Malaria", "Seasonal Diseases", "Chikungunya"].map((item) => (
                     <ListItem
                         key={item}
                         onClick={() => handleOpen(item)}
@@ -184,7 +184,7 @@ const Awareness = ({ currentLanguage }) => {
                             {item === "Dengue" && <HealthAndSafetyIcon color="primary" />}
                             {item === "Malaria" && <AcUnitIcon color="secondary" />}
                             {item === "Seasonal Diseases" && <LocalHospitalIcon color="error" />}
-                            {item === "Seasonal Changes" && <FilterDramaIcon color="info" />}
+                            {item === "Chikungunya" && <FilterDramaIcon color="info" />}
                             
                         </ListItemIcon>
                         <ListItemText primary={item} sx={{ color: 'black' }} />
@@ -213,7 +213,7 @@ const Awareness = ({ currentLanguage }) => {
                             {item === "Dengue" && <HealthAndSafetyIcon color="primary" />}
                             {item === "Malaria" && <AcUnitIcon color="secondary" />}
                             {item === "Seasonal Diseases" && <LocalHospitalIcon color="error" />}
-                            {item === "Seasonal Changes" && <FilterDramaIcon color="info" />}
+                            {item === "Chikungunya" && <FilterDramaIcon color="info" />}
                             {item === "Fumigation Services" && <CleaningServicesIcon color="action" />}
                             {item === "Weather Ready Essentials" && <CheckroomIcon color="success" />}
                         </ListItemIcon>
@@ -232,7 +232,7 @@ const Awareness = ({ currentLanguage }) => {
       {currentSelection}
     </Typography>
 
-    {["Dengue", "Malaria", "Seasonal Diseases", "Seasonal Changes"].includes(currentSelection) && (
+    {["Dengue", "Malaria", "Seasonal Diseases", "Chikungunya"].includes(currentSelection) && (
       <DiseaseDetail currentLanguage={currentLanguage} currentSelection={currentSelection} />
     )}
 
