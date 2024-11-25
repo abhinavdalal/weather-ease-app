@@ -139,6 +139,38 @@ function EnglishList() {
     />
     <span>EMERGENCY <a href="tel:112">112</a></span>
   </ListItem>
+
+  <ListItem 
+    sx={{ 
+      fontSize: '1 rem', 
+      textAlign: 'left', 
+      border: '4px solid yellow', 
+      borderRadius: '20px', 
+      padding: '15px', 
+      width: '300px', 
+      height: '170px', 
+      display: 'flex', 
+      flexDirection: 'row', 
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: '10px',
+      margin: '10px'
+    }}
+  >
+    
+    <span>
+    <strong>Hospital and Pharmacies</strong>.
+    <p class="text-justify"> 
+        Sattva Pediatric - 
+        <a href="tel:08655285545">08655285545</a>
+    </p>
+    <p class="text-justify">
+        Wadia Hospital - 
+        <Button href="https://maps.app.goo.gl/7eNnzKcrKau8uZn29">click here</Button>
+    </p>
+</span>
+
+  </ListItem>
 </Grid>
 
 

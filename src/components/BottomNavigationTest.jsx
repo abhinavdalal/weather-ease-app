@@ -25,12 +25,16 @@ export default function SimpleBottomNavigation() {
           backgroundColor: '#3f8cdd',
           borderTop: '0.5px solid #ccc',
           display: 'flex',
-          height: '48px' // Reduce the height of the BottomNavigation
+          flexDirection: 'row',
+          flexWrap: 'nowrap',
+          height: '48px', // Reduce the height of the BottomNavigation
+          flex: '1 1 1fr',
+          width: '100vw',
         }}
       >
-        <NavLink to="/Home" style={{ textDecoration: 'none' }}>
+        <NavLink to="/Home" style={{ textDecoration: 'none',  }}>
           <BottomNavigationAction
-            label="Home"
+            label=""
             showLabel
             icon={<CottageIcon sx={{ fontSize: '18px' }} />}
             sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}
@@ -38,7 +42,7 @@ export default function SimpleBottomNavigation() {
         </NavLink>
         <NavLink to="/temp" style={{ textDecoration: 'none' }}>
           <BottomNavigationAction
-            label="Updates"
+            label=""
             showLabel
             icon={<UpdateIcon sx={{ fontSize: '18px' }} />}
             sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}
@@ -46,7 +50,7 @@ export default function SimpleBottomNavigation() {
         </NavLink>
         <NavLink to="/motiv" style={{ textDecoration: 'none' }}>
           <BottomNavigationAction
-            label="Suggestions"
+            label=""
             showLabel
             icon={<FormatQuoteIcon sx={{ fontSize: '18px' }} />}
             sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}
@@ -54,7 +58,7 @@ export default function SimpleBottomNavigation() {
         </NavLink>
         <NavLink to="/Help" style={{ textDecoration: 'none' }}>
           <BottomNavigationAction
-            label="Help"
+            label=""
             showLabel
             icon={<SosIcon sx={{ fontSize: '18px' }} />}
             sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}
@@ -62,7 +66,7 @@ export default function SimpleBottomNavigation() {
         </NavLink>
         <NavLink to="/Rec" style={{ textDecoration: 'none' }}>
           <BottomNavigationAction
-            label="Recipe"
+            label=""
             showLabel
             icon={<SoupKitchenIcon sx={{ fontSize: '18px' }} />}
             sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}
@@ -70,7 +74,7 @@ export default function SimpleBottomNavigation() {
         </NavLink>
         <NavLink to="/aware" style={{ textDecoration: 'none' }}>
           <BottomNavigationAction
-            label="Awareness"
+            label=""
             showLabel
             icon={<HealthAndSafetyIcon sx={{ fontSize: '18px' }} />}
             sx={{ fontSize: '10px', color: '#111', minWidth: 40, padding: '0 4px' }}

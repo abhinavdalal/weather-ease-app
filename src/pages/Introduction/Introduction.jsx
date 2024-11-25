@@ -5,12 +5,12 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 
-function Introduction() {
-  const [language, setLanguage] = useState('English'); // Language state
+function Introduction({ currentLanguage }) {
+  // const [language, setLanguage] = useState('English'); // Language state
 
-  const toggleLanguage = () => {
-    setLanguage((prev) => (prev === 'English' ? 'Hindi' : 'English'));
-  };
+  // const toggleLanguage = () => {
+  //   setLanguage((prev) => (prev === 'English' ? 'Hindi' : 'English'));
+  // };
 
   return (
     <>
@@ -22,7 +22,7 @@ function Introduction() {
           borderRadius: '10px',
         }}
       >
-        {/* Language Toggle Button */}
+        {/* Language Toggle Button
         <Box sx={{ textAlign: 'right', mb: 2 }}>
           <Button
             variant="outlined"
@@ -31,7 +31,7 @@ function Introduction() {
           >
             {language === 'English' ? 'Switch to Hindi' : 'अंग्रेज़ी में बदलें'}
           </Button>
-        </Box>
+        </Box> */}
 
         {/* Introduction Message */}
         <Box sx={{ textAlign: 'center', marginBottom: 4 }}>
@@ -39,37 +39,22 @@ function Introduction() {
             variant="body1"
             sx={{ fontSize: '1.2rem', color: '#000' }}
           >
-            {language === 'English'
+            {currentLanguage === 'English'
               ? 'Dear Community Members, With every update, We bring hope and awareness—because after every storm, the sky always clears!'
               : 'प्रिय समुदाय के सदस्य, हर अपडेट के साथ हम आशा और जागरूकता लाते हैं—क्योंकि हर तूफान के बाद आकाश हमेशा साफ होता है!'}
           </Typography>
         </Box>
 
-        {/* Section Title */}
-        <Box sx={{ textAlign: 'center', mb: 2 }}>
-          <Typography variant="h4" sx={{ color: '#000' }}>
-            {language === 'English' ? 'Select an Option' : 'एक विकल्प चुनें'}
-          </Typography>
-        </Box>
-
-        {/* Buttons for Options */}
-        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+        {/* "Let's Start" Button */}
+        <Box sx={{ textAlign: 'center', mb: 4 }}>
           <Button
             component={Link}
             to="/home"
             variant="contained"
             color="primary"
-            sx={{ marginRight: 2 }}
+            sx={{ marginTop: 4 }}
           >
-            {language === 'English' ? 'Students' : 'छात्र'}
-          </Button>
-          <Button
-            component={Link}
-            to="/home"
-            variant="contained"
-            color="primary"
-          >
-            {language === 'English' ? 'Parents' : 'अभिभावक'}
+            { currentLanguage === 'English' ? "Let's Start" : 'आओ शुरू करें'}
           </Button>
         </Box>
       </Container>

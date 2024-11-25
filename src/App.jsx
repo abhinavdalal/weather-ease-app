@@ -25,7 +25,7 @@ export default function App() {
       <div className={'scrollable'}>
       <Routes>
         <Route path="/">
-          <Route index element={<Introduction/>} />
+          <Route index element={<Introduction currentLanguage={currentLanguage}/>} />
           <Route path="temp" element={<Temperatures/>} />
           <Route path="motiv" element={<Motivation />} />
           <Route path="Home" element={<HomeScreen />} />

@@ -1,7 +1,7 @@
 .weather-container {
   text-align: center;
   background-color: #a0e7f4;
-  color: #fff;
+  color: #131213;
   border-radius: 7px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   font-family: "Arial", sans-serif;
@@ -16,7 +16,7 @@
 }
 
 .header {
-  font-size: 24px;
+  font-size: 15px;
   font-weight: bold;
   margin: 15px 0;
 }
@@ -30,7 +30,7 @@
 }
 
 .temperature {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 10px;
   margin-bottom: 12px;
 }
