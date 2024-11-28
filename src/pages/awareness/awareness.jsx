@@ -229,7 +229,7 @@ const Awareness = ({ currentLanguage }) => {
   aria-describedby="modal-modal-description"
 >
   <Box sx={style}>
-    <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ color: 'black' }}>
+    <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ color: 'white' }}>
       {currentSelection}
     </Typography>
 
