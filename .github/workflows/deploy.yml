@@ -45,7 +45,7 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: pages deploy .dist --project-name=weather-ease-app
+          command: pages deploy dist --project-name=weather-ease-app
 
       # - name: Deploy to GitHub Pages
       #   uses: peaceiris/actions-gh-pages@v3
