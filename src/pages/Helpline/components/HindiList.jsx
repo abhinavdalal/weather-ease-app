@@ -17,8 +17,8 @@ function EnglishList() {
                         fontSize: '1.2rem',
                         textAlign: 'center',
                         border: '4px solid yellow',
-                        borderRadius: '20px', // Adjusted for better rounded corners
-                        padding: '15px', // Increased padding for more space
+                        borderRadius: '20px', 
+                        padding: '15px', 
                         width: '200px',
                         height: '170px',
                         display: 'flex',
@@ -26,7 +26,7 @@ function EnglishList() {
                         justifyContent: 'center',
                         alignItems: 'center',
                         gap: '10px',
-                        margin: '10px' // Added margin for spacing between items
+                        margin: '10px' 
                     }}
                 >
                     <img
@@ -111,6 +111,7 @@ function EnglishList() {
                         height="80" />
                     <span>ट्रैफ़िक <a href="tel:1073">1073</a></span>
                 </ListItem>
+                
 
                 <ListItem
                     sx={{
@@ -136,6 +137,30 @@ function EnglishList() {
                         height="90" />
                     <span>आपातकालीन <a href="tel:112">112</a></span>
                     </ListItem>
+                    <ListItem
+                    sx={{
+                        fontSize: '1.2rem',
+                        textAlign: 'center',
+                        border: '4px solid yellow',
+                        borderRadius: '20px',
+                        padding: '15px',
+                        width: '250px',
+                        height: '170px',
+                        display: 'flex',
+                        flexDirection: 'row',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        gap: '10px',
+                        margin: '10px'
+                    }}
+                >
+                    <img
+                        src="assets/TUBERCULOSIS.jpeg"
+                        alt="Description of the image"
+                        width="100"
+                        height="80" />
+                        <span>क्षय रोग <a href="tel: 022-22621625"> 022-22621625</a></span>
+                </ListItem>
 
                     <ListItem 
     sx={{ 

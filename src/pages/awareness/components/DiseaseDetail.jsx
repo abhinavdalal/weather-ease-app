@@ -41,6 +41,18 @@ const descriptions = {
         "Remedies": "हल्दी वाला दूध, अदरक की चाय।"
     }
 },
+"Tuberculosis": {  // Added new disease - Tuberculosis
+    English: {
+        "Symptoms": "Persistent cough, chest pain, weight loss, fatigue, fever, night sweats.",
+        "Prevention": "Avoid close contact with infected individuals, cover mouth while coughing, wear masks.",
+        "Remedies": "Ensure proper rest, nutrition, and follow TB treatment protocol prescribed by healthcare providers."
+    },
+    Hindi: {
+        "Symptoms": "लगातार खांसी, सीने में दर्द, वजन घटना, थकान, बुखार, रात को पसीना आना।",
+        "Prevention": "संक्रमित व्यक्तियों के निकट संपर्क से बचें, खांसी करते समय मुँह ढकें, मास्क पहनें।",
+        "Remedies": "सही आराम, पोषण प्राप्त करें, और स्वास्थ्य सेवा प्रदाताओं द्वारा निर्धारित टीबी उपचार का पालन करें।"
+    }
+  },
 
 };
     

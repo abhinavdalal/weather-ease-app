@@ -11,6 +11,7 @@ import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import CleaningServicesIcon from '@mui/icons-material/CleaningServices';
 import FilterDramaIcon from '@mui/icons-material/FilterDrama';
 import CheckroomIcon from '@mui/icons-material/Checkroom';
+import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 import DiseaseDetail from './components/DiseaseDetail';
 import FumigationDetail from './components/FumigationDetail';
 import AwarenessDetail from './components/AwarenessDetail';
@@ -43,7 +44,7 @@ const descriptions = {
         },
         Hindi:{ "Symptoms":" उच्च बुखार, तेज़ सिरदर्द, आँखों के पीछे दर्द, जोड़ों और मांसपेशियों में दर्द, चकत्ते।",
 "Prevention":" मच्छर भगाने वाले का उपयोग करें, मच्छरदानी के नीचे सोएं, ठहरे हुए पानी से बचें।",
-"Remedies":" पपीते का पत्ता अर्क, भरपूर पानी और नारियल पानी पीएं।"}
+"Remedies":" पपीते का पत्ता अर्क, भरपूर पानी और नारियल पानी पीएं।" }
     },
 
     Malaria: {
@@ -90,7 +91,19 @@ const descriptions = {
     },
   },
 
-    
+  "Tuberculosis": { 
+    English: {
+        "Symptoms": "Persistent cough, chest pain, weight loss, fatigue, fever, night sweats.",
+        "Prevention": "Avoid close contact with infected individuals, cover mouth while coughing, wear masks.",
+        "Remedies": "Ensure proper rest, nutrition, and follow TB treatment protocol prescribed by healthcare providers."
+    },
+    Hindi: {
+        "Symptoms": "लगातार खांसी, सीने में दर्द, वजन घटना, थकान, बुखार, रात को पसीना आना।",
+        "Prevention": "संक्रमित व्यक्तियों के निकट संपर्क से बचें, खांसी करते समय मुँह ढकें, मास्क पहनें।",
+        "Remedies": "सही आराम, पोषण प्राप्त करें, और स्वास्थ्य सेवा प्रदाताओं द्वारा निर्धारित टीबी उपचार का पालन करें।"
+    }
+  },
+
   "Weather Ready Essentials": {
     English: {
         "Summer": {
@@ -131,13 +144,6 @@ const descriptions = {
 }
 };
 
-
-
-
-
-
-
-
 const Awareness = ({ currentLanguage }) => {
     const [currentSelection, setCurrentSelection] = useState("");
     const [open, setOpen] = useState(false);
@@ -167,7 +173,7 @@ const Awareness = ({ currentLanguage }) => {
         </AccordionSummary>
         <AccordionDetails>
         <List sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                {["Dengue", "Malaria", "Seasonal Diseases", "Chikungunya"].map((item) => (
+                {["Dengue", "Malaria", "Seasonal Diseases", "Chikungunya", "Tuberculosis"].map((item) => (
                     <ListItem
                         key={item}
                         onClick={() => handleOpen(item)}
@@ -186,7 +192,7 @@ const Awareness = ({ currentLanguage }) => {
                             {item === "Malaria" && <AcUnitIcon color="secondary" />}
                             {item === "Seasonal Diseases" && <LocalHospitalIcon color="error" />}
                             {item === "Chikungunya" && <FilterDramaIcon color="info" />}
-                            
+                            {item === "Tuberculosis" && <MedicalServicesIcon color="warning" />} {/* Correct Icon */}
                         </ListItemIcon>
                         <ListItemText primary={item} sx={{ color: 'black' }} />
                     </ListItem>
@@ -194,7 +200,7 @@ const Awareness = ({ currentLanguage }) => {
             </List>
         </AccordionDetails>
       </Accordion>
-            
+
             <List sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 {[ "Fumigation Services", "Weather Ready Essentials"].map((item) => (
                     <ListItem
@@ -211,10 +217,6 @@ const Awareness = ({ currentLanguage }) => {
                         }}
                     >
                         <ListItemIcon>
-                            {item === "Dengue" && <HealthAndSafetyIcon color="primary" />}
-                            {item === "Malaria" && <AcUnitIcon color="secondary" />}
-                            {item === "Seasonal Diseases" && <LocalHospitalIcon color="error" />}
-                            {item === "Chikungunya" && <FilterDramaIcon color="info" />}
                             {item === "Fumigation Services" && <CleaningServicesIcon color="action" />}
                             {item === "Weather Ready Essentials" && <CheckroomIcon color="success" />}
                         </ListItemIcon>
@@ -222,6 +224,7 @@ const Awareness = ({ currentLanguage }) => {
                     </ListItem>
                 ))}
             </List>
+
             <Modal
   open={open}
   onClose={handleClose}
@@ -233,7 +236,7 @@ const Awareness = ({ currentLanguage }) => {
       {currentSelection}
     </Typography>
 
-    {["Dengue", "Malaria", "Seasonal Diseases", "Chikungunya"].includes(currentSelection) && (
+    {["Dengue", "Malaria", "Seasonal Diseases", "Chikungunya", "Tuberculosis"].includes(currentSelection) && (
       <DiseaseDetail currentLanguage={currentLanguage} currentSelection={currentSelection} />
     )}
 
@@ -244,32 +247,8 @@ const Awareness = ({ currentLanguage }) => {
     {currentSelection === "Weather Ready Essentials" && (
       <AwarenessDetail currentLanguage={currentLanguage} />
     )}
-  
-
-        
-
-                    {/* <Typography id="modal-modal-description" sx={{ mt: 2, color: 'black' }}> */}
-                    {/* <div className="mt-2 text-justify">
-                        <span className=''>{ currentLanguage === "English"  ? "Symptoms :" : "लक्षण :" }</span>
-                        <span>{((descriptions[currentSelection] && descriptions[currentSelection][currentLanguage] && descriptions[currentSelection][currentLanguage]["Symptoms"]) ||
-                        `More information about ${currentSelection} will be displayed here.`)}
-                        </span>   
-                    </div>
-                    <div className="mt-2 text-justify">
-                        <span className=''>{ currentLanguage === "English"  ? "Prevention :" : "रोकथाम :" }</span>
-                        <span>{((descriptions[currentSelection] && descriptions[currentSelection][currentLanguage] && descriptions[currentSelection][currentLanguage]["Prevention"]) ||
-                        `More information about ${currentSelection} will be displayed here.`)}
-                        </span>   
-                    </div>
-                    <div className="mt-2 text-justify">
-                        <span className=''>{ currentLanguage === "English"  ? "Remedies :" : "उपाय :" }</span>
-                        <span>{((descriptions[currentSelection] && descriptions[currentSelection][currentLanguage] && descriptions[currentSelection][currentLanguage]["Remedies"]) ||
-                        `More information about ${currentSelection} will be displayed here.`)}
-                        </span>   
-                    </div> */}
-                    {/* </Typography> */}
-                </Box>
-            </Modal>
+  </Box>
+</Modal>
         </>
     );
 };

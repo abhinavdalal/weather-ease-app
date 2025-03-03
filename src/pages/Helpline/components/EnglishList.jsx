@@ -139,6 +139,31 @@ function EnglishList() {
     />
     <span>EMERGENCY <a href="tel:112">112</a></span>
   </ListItem>
+  <ListItem 
+    sx={{ 
+      fontSize: '1.2rem', 
+      textAlign: 'center', 
+      border: '4px solid yellow', 
+      borderRadius: '20px', 
+      padding: '15px', 
+      width: '250px', 
+      height: '170px', 
+      display: 'flex', 
+      flexDirection: 'row', 
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: '10px',
+      margin: '10px'
+    }}
+  >
+    <img 
+      src="assets/TUBERCULOSIS.jpeg"
+      alt="Description of the image" 
+      width="70" 
+      height="80" 
+    />
+    <span>TUBERCULOSIS <a href="tel: 022-22621625"> 022-22621625</a></span>
+  </ListItem>
 
   <ListItem 
     sx={{ 
