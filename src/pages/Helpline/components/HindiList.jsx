@@ -1,15 +1,14 @@
 import React from 'react'
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';import { Link } from 'react-router-dom';
+import ListItem from '@mui/material/ListItem'; 
+import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { Grid } from '@mui/material';
 //import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-
 function EnglishList() {
     return (
-       
       <List sx={{ textAlign: 'center' }}>
             <Grid container spacing={2}>
                 <ListItem
@@ -111,7 +110,6 @@ function EnglishList() {
                         height="80" />
                     <span>ट्रैफ़िक <a href="tel:1073">1073</a></span>
                 </ListItem>
-                
 
                 <ListItem
                     sx={{
@@ -136,8 +134,40 @@ function EnglishList() {
                         width="90"
                         height="90" />
                     <span>आपातकालीन <a href="tel:112">112</a></span>
-                    </ListItem>
-                    <ListItem
+                </ListItem>
+
+                <ListItem 
+                    sx={{ 
+                        fontSize: '1 rem', 
+                        textAlign: 'left', 
+                        border: '4px solid yellow', 
+                        borderRadius: '20px', 
+                        padding: '15px', 
+                        width: '300px', 
+                        height: '170px', 
+                        display: 'flex', 
+                        flexDirection: 'row', 
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        gap: '10px',
+                        margin: '10px'
+                    }}
+                >
+                    <span>
+                    <strong>अस्पताल और फार्मेसियों</strong>.
+                    <p className="text-justify"> 
+                    सत्व बाल चिकित्सा - 
+                        <a href="tel:08655285545">08655285545</a>
+                    </p>
+                    <p className="text-justify">
+                    वाडिया हॉस्पिटल- 
+                        <Button href="https://maps.app.goo.gl/7eNnzKcrKau8uZn29">click here</Button>
+                    </p>
+                    </span>
+                </ListItem>
+
+                {/* Tuberculosis section with name and number on separate lines */}
+                <ListItem
                     sx={{
                         fontSize: '1.2rem',
                         textAlign: 'center',
@@ -145,9 +175,9 @@ function EnglishList() {
                         borderRadius: '20px',
                         padding: '15px',
                         width: '250px',
-                        height: '170px',
+                        height: '190px',
                         display: 'flex',
-                        flexDirection: 'row',
+                        flexDirection: 'column', // Use column direction to stack name and number
                         justifyContent: 'center',
                         alignItems: 'center',
                         gap: '10px',
@@ -155,47 +185,15 @@ function EnglishList() {
                     }}
                 >
                     <img
-                        src="assets/TUBERCULOSIS.jpeg"
+                        src="/assets/TUBERCULOSIS.jpeg"
                         alt="Description of the image"
                         width="100"
                         height="80" />
-                        <span>क्षय रोग <a href="tel: 022-22621625"> 022-22621625</a></span>
+                    <span>क्षय रोग</span>
+                    <span><a href="tel:022-22621625">022-22621625</a></span>
                 </ListItem>
 
-                    <ListItem 
-    sx={{ 
-      fontSize: '1 rem', 
-      textAlign: 'left', 
-      border: '4px solid yellow', 
-      borderRadius: '20px', 
-      padding: '15px', 
-      width: '300px', 
-      height: '170px', 
-      display: 'flex', 
-      flexDirection: 'row', 
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: '10px',
-      margin: '10px'
-    }}
-  >
-    
-    <span>
-    <strong>अस्पताल और फार्मेसियों</strong>.
-    <p class="text-justify"> 
-    सत्व बाल चिकित्सा - 
-        <a href="tel:08655285545">08655285545</a>
-    </p>
-    <p class="text-justify">
-    वाडिया हॉस्पिटल- 
-        <Button href="https://maps.app.goo.gl/7eNnzKcrKau8uZn29">click here</Button>
-    </p>
-</span>
-
-  </ListItem>
-              
             </Grid>
-
 
             <ListItem
                 sx={{
